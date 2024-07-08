@@ -98,18 +98,18 @@ main .ecological-impact .info-impact button {
   line-height: 1.7;
 }
 
-.health-care, .home-decor {
+.health-care, .about-us, .home-decor {
   margin-block-start: 60px;
   width: 92%;
 }
-.health-care h2, .home-decor h2 {
+.health-care h2, .about-us h2, .home-decor h2 {
   width: 50%;
   font-size: 2.2rem;
   font-weight: normal;
   line-height: 2.7rem;
   color: #7C6A0A;
 }
-.health-care .container-cards, .home-decor .container-cards {
+.health-care .container-cards, .about-us .container-cards, .home-decor .container-cards {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -118,7 +118,7 @@ main .ecological-impact .info-impact button {
   scroll-snap-type: x proximity;
   margin-block-start: 30px;
 }
-.health-care .card, .home-decor .card {
+.health-care .card, .about-us .card, .home-decor .card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -134,33 +134,33 @@ main .ecological-impact .info-impact button {
   background-color: #FFDAC6;
   color: #7C6A0A;
 }
-.health-care .card button, .home-decor .card button {
+.health-care .card button, .about-us .card button, .home-decor .card button {
   background: none;
   border: none;
   margin-block-start: 2px;
   margin-block-end: 8px;
   align-self: flex-end;
 }
-.health-care .card button path, .home-decor .card button path {
+.health-care .card button path, .about-us .card button path, .home-decor .card button path {
   stroke: #7C6A0A;
 }
-.health-care .card img, .home-decor .card img {
+.health-care .card img, .about-us .card img, .home-decor .card img {
   width: 25vw;
   min-width: 132px;
   max-width: 241px;
   height: 174px;
   border-radius: 5px;
 }
-.health-care .card .info-card, .home-decor .card .info-card {
+.health-care .card .info-card, .about-us .card .info-card, .home-decor .card .info-card {
   margin-block-start: 10px;
   width: 85%;
 }
-.health-care .card .info-card h3, .home-decor .card .info-card h3 {
+.health-care .card .info-card h3, .about-us .card .info-card h3, .home-decor .card .info-card h3 {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.8rem;
 }
-.health-care .card .info-card p, .home-decor .card .info-card p {
+.health-care .card .info-card p, .about-us .card .info-card p, .home-decor .card .info-card p {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.1rem;
@@ -169,4 +169,106 @@ main .ecological-impact .info-impact button {
 .home-decor .card {
   background-color: #BABD8D;
   color: white;
+}
+
+.why-us .mission-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-block-start: 30px;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #FA9500;
+}
+.why-us .mission-info .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-us .mission-info .info img {
+  width: 74px;
+}
+.why-us .mission-info .info p {
+  font-size: 1.3rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+.gallery {
+  margin-block-start: 40px;
+}
+.gallery .image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  margin-block-start: 30px;
+}
+.gallery .image img {
+  width: 90%;
+  min-width: 296px;
+  max-width: 396px;
+  height: 297px;
+  border-radius: 8px;
+}
+
+.location {
+  margin-block-start: 40px;
+  color: #FA9500;
+  margin-block-end: 60px;
+}
+.location img {
+  margin-block-start: 30px;
+  margin-block-end: 40px;
+  width: 100%;
+  min-width: 300px;
+  height: 480px;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.location h3 {
+  width: 60%;
+  margin-block-end: 20px;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 2.6rem;
+}
+.location p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+
+footer {
+  background-color: #FA9500;
+  color: white;
+}
+footer p {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+footer li {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  list-style: none;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+footer .social-icons {
+  width: 160px;
+  height: 40px;
+  margin-top: 18px;
+}
+footer .social-icons img {
+  width: 26px;
+  height: 26px;
+  margin-left: 18px;
 }/*# sourceMappingURL=main.css.map */
