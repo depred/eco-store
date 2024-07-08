@@ -65,7 +65,9 @@ main {
 
     .ecological-impact {
         width: 92%;
-
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         img {
             object-fit: cover;
             width: 100%;
@@ -105,5 +107,86 @@ main {
                 line-height: 1.7;
             }
         }
+    }
+}
+
+.health-care {
+    margin-block-start: 60px;
+    width: 92%;
+    h2 {
+        width: 50%;
+        font-size: 2.2rem;
+        font-weight: normal;
+        line-height: 2.7rem;
+        color: $primary-text-color;
+    }
+    .container-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        margin-block-start: 30px;
+
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        // Aplicar cambios para que sea responsive
+        width: 32%;
+        min-width: 178px;
+        max-width: 324px;
+        height: 276px;
+        max-height: 502px;
+        border-radius: 6px;
+        scroll-snap-align: center;
+        background-color: $secondary-color;
+        color: $primary-text-color;
+
+        button {
+            background: none;
+            border: none;
+            margin-block-start: 2px;
+            margin-block-end: 8px;
+            align-self: flex-end;
+            path {
+                stroke: #7C6A0A;
+            }
+        }
+
+        img {
+            // Aplicar cambios para que sea responsive
+            width: 25vw;
+            min-width: 132px;
+            max-width: 241px;
+            height: 174px;
+            border-radius: 5px;
+        }
+        .info-card {
+            margin-block-start: 10px;
+            width: 85%;
+            h3 {
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: normal;
+                line-height: 1.1rem;
+            }
+        }
+    }
+}
+
+.home-decor {
+    @extend .health-care;
+    .card {
+        background-color: $tertiary-color;
+        color: white;
     }
 }

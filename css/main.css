@@ -55,6 +55,9 @@ main {
 }
 main .ecological-impact {
   width: 92%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 main .ecological-impact img {
   -o-object-fit: cover;
@@ -93,4 +96,77 @@ main .ecological-impact .info-impact button {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.7;
+}
+
+.health-care, .home-decor {
+  margin-block-start: 60px;
+  width: 92%;
+}
+.health-care h2, .home-decor h2 {
+  width: 50%;
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 2.7rem;
+  color: #7C6A0A;
+}
+.health-care .container-cards, .home-decor .container-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin-block-start: 30px;
+}
+.health-care .card, .home-decor .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 32%;
+  min-width: 178px;
+  max-width: 324px;
+  height: 276px;
+  max-height: 502px;
+  border-radius: 6px;
+  scroll-snap-align: center;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+}
+.health-care .card button, .home-decor .card button {
+  background: none;
+  border: none;
+  margin-block-start: 2px;
+  margin-block-end: 8px;
+  align-self: flex-end;
+}
+.health-care .card button path, .home-decor .card button path {
+  stroke: #7C6A0A;
+}
+.health-care .card img, .home-decor .card img {
+  width: 25vw;
+  min-width: 132px;
+  max-width: 241px;
+  height: 174px;
+  border-radius: 5px;
+}
+.health-care .card .info-card, .home-decor .card .info-card {
+  margin-block-start: 10px;
+  width: 85%;
+}
+.health-care .card .info-card h3, .home-decor .card .info-card h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.health-care .card .info-card p, .home-decor .card .info-card p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.1rem;
+}
+
+.home-decor .card {
+  background-color: #BABD8D;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
