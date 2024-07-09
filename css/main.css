@@ -42,6 +42,9 @@ header nav button img {
   width: 20px;
   height: 20px;
 }
+header nav .icons {
+  display: none;
+}
 
 main {
   display: flex;
@@ -128,7 +131,6 @@ main .ecological-impact .info-impact button {
   min-width: 178px;
   max-width: 324px;
   height: 276px;
-  max-height: 502px;
   border-radius: 6px;
   scroll-snap-align: center;
   background-color: #FFDAC6;
@@ -169,6 +171,10 @@ main .ecological-impact .info-impact button {
 .home-decor .card {
   background-color: #BABD8D;
   color: white;
+}
+
+.about-us h2 {
+  width: 100%;
 }
 
 .why-us .mission-info {

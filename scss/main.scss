@@ -50,6 +50,9 @@ header {
                 height: 20px;
             }
         }
+        .icons {
+            display: none;
+        }
     }
 }
 
@@ -141,7 +144,6 @@ main {
         min-width: 178px;
         max-width: 324px;
         height: 276px;
-        max-height: 502px;
         border-radius: 6px;
         scroll-snap-align: center;
         background-color: $secondary-color;
@@ -193,6 +195,9 @@ main {
 
 .about-us {
     @extend .health-care;
+    h2 {
+        width: 100%;
+    }
 }
 
 .why-us {

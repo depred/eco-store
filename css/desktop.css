@@ -1,0 +1,127 @@
+header nav button {
+  display: none;
+}
+header nav .icons {
+  display: inline-block;
+}
+header nav .icons button {
+  background: none;
+  border: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+header nav .icons button path {
+  stroke: #7C6A0A;
+}
+
+main .ecological-impact {
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+main .ecological-impact img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 35vw;
+  height: 80vh;
+  border-radius: 8px;
+}
+main .ecological-impact .info-impact {
+  width: 40%;
+  height: 286px;
+}
+main .ecological-impact .info-impact h2 {
+  font-size: 4rem;
+  line-height: 7.8rem;
+}
+main .ecological-impact .info-impact p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+main .ecological-impact .info-impact button {
+  align-self: self-start;
+}
+
+@media (min-width: 1440px) {
+  header nav p {
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+  }
+  header nav .icons button svg {
+    width: 28px;
+    height: 28px;
+  }
+  main .ecological-impact img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 30vw;
+    height: 80vh;
+  }
+  main .ecological-impact .info-impact {
+    width: 35%;
+    height: 350px;
+  }
+  main .ecological-impact .info-impact h2 {
+    font-size: 4.5rem;
+    line-height: 7.8rem;
+  }
+  main .ecological-impact .info-impact p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  main .ecological-impact .info-impact button {
+    width: 150px;
+    height: 45px;
+    font-size: 1.4rem;
+    line-height: 2.1;
+  }
+  .health-care h2, .home-decor h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .health-care .container-cards, .home-decor .container-cards {
+    gap: 50px;
+  }
+  .health-care .card .info-card, .home-decor .card .info-card {
+    margin-block-start: 10px;
+    width: 85%;
+  }
+  .health-care .card .info-card h3, .home-decor .card .info-card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+  }
+  .health-care .card .info-card p, .home-decor .card .info-card p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.6rem;
+  }
+  .why-us .mission-info {
+    justify-content: space-evenly;
+  }
+  .why-us .mission-info .info {
+    width: 22%;
+  }
+  .why-us .mission-info .info img {
+    width: 114px;
+  }
+  .why-us .mission-info .info p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  .why-us .mission-info .light {
+    width: 20%;
+  }
+  .why-us .mission-info .light img {
+    -o-object-position: 10px 0;
+       object-position: 10px 0;
+  }
+  .gallery .image {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .gallery .image img {
+    height: 398px;
+  }
+}/*# sourceMappingURL=desktop.css.map */

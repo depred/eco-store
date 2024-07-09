@@ -1,0 +1,159 @@
+header {
+    nav {
+        button {
+            display: none;
+        }
+        .icons {
+            display: inline-block;
+            button {
+                background: none;
+                border: none;
+                display: inline-block;
+                margin-left: 15px;
+                path {
+                    stroke: #7C6A0A;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .ecological-impact {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        img {
+            object-fit: cover;
+            width: 35vw;
+            height: 80vh;
+            border-radius: 8px;
+        }
+        .info-impact {
+            width: 40%;
+            height: 286px;
+            h2 {
+                font-size: 4rem;
+                line-height: 7.8rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
+            button {
+                align-self: self-start
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+    header {
+        nav {
+            p {
+                font-size: 2.5rem;
+                line-height: 3.9rem;
+            }
+            .icons {
+                button {
+                    svg {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .ecological-impact {
+            img {
+                object-fit: cover;
+                width: 30vw;
+                height: 80vh;
+            }
+            .info-impact {
+                width: 35%;
+                height: 350px;
+                h2 {
+                    font-size: 4.5rem;
+                    line-height: 7.8rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                }
+                button {
+                    width: 150px;
+                    height: 45px;
+                    font-size: 1.4rem;
+                    line-height: 2.1;
+                }
+            }
+        }
+    }
+
+    .health-care {
+        h2 {
+            font-size: 4rem;
+            line-height: 4.5rem;
+        }
+        .container-cards {
+            gap: 50px;
+        }
+        .card {
+            .info-card {
+                margin-block-start: 10px;
+                width: 85%;
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 2.4rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                    font-weight: normal;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .home-decor {
+        @extend .health-care;
+    }
+    .why-us {
+        .mission-info {
+            justify-content: space-evenly;
+            .info {
+                width: 22%;
+                img {
+                    width: 114px;
+                }
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+                }
+            }
+            .light {
+                width: 20%;
+                img {
+                    object-position: 10px 0;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        .image {
+            flex-direction: row;
+            justify-content: space-between;
+            img {
+                height: 398px;
+            }
+        }
+    }
+}
